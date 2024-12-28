@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar / Kalendar / તારીખીયુ</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="month-year"></div>
+            <div class="prev-next">
+                <button id="btnPrevious"> &lt; </button>
+                <button id="btnNext"> &gt; </button>
+            </div>
+        </div>
+        <div class="calendar">
+            <table>
+                <thead>
+                    <tr>                        
+                        <th class="weekend">Sunday</th>
+                        <th class="weekday">Monday</th>
+                        <th class="weekday">Tuesday</th>
+                        <th class="weekday">Wednesday</th>
+                        <th class="weekday">Thursday</th>
+                        <th class="weekday">Friday</th>
+                        <th class="weekend">Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="7">
+                            <button id="btnGoToToday">Go to Today</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

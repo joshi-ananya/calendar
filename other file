@@ -1,0 +1,45 @@
+months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+]
+today  = new Date();
+monthYearDiv = document.getElementsByClassName('month-year')[0]
+monthYearDiv.innerText = months[today.getMonth()] + ', ' + today.getFullYear()
+calendar = document.getElementsByClassName('calendar')[0]
+tbody = calendar.getElementsByTagName('tbody')[0]
+
+firstDayOfMonth = new Date(today.getFullYear(), today.getMonth(), 1)
+monthStartDay = firstDayOfMonth.getDay();
+lastDayOfMonth  = new Date(today.getFullYear(), today.getMonth() + 1, 0)
+createNextRow = true;
+currentDate = firstDayOfMonth;
+currentDate.setDate(-currentDate.getDay() + 1)
+
+while(currentDate < lastDayOfMonth) {    
+    tr = document.createElement('tr')
+    tbody.appendChild(tr)
+    
+    for(i = 0; i< 7; i++) {        
+        td = document.createElement('td');
+        if(i < 5){
+            td.classList.add('weekday')
+        } else {
+            td.classList.add('weekend')
+        }
+        td.innerText = currentDate.getDate() + ', ' + currentDate.getDay();
+        tr.appendChild(td);
+        currentDate.setDate(currentDate.getDate() + 1)
+        console.log(currentDate)
+    }
+    console.log(currentDate)
+}

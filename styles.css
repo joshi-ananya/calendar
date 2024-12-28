@@ -1,0 +1,94 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+td:hover, button:hover {
+    cursor: pointer;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #bbb, #999);
+    color: #09476e;
+}
+
+.container {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 100px;
+    background-color: #09476e;
+}
+.header {
+    font-size: 25px;
+    display: flex;    
+    margin-bottom: 15px;        
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.month-year {
+    flex: 0.8;
+    display: inline-flex;
+    color: #f935c5;
+}
+.prev-next {
+    flex: 0.2;
+    display: inline-flex;
+    margin-top: 5px;
+}
+.prev-next button {
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 35px;
+    background-color: #09476e;
+    border: 1px solid #f935c5;    
+    color: #f935c5;
+}
+.prev-next button:hover {
+    background-color: #f935c5;
+    border-color: #09476e;    
+    color: #09476e;
+}
+.calendar table tbody tr {
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* tr {
+    background: linear-gradient(to right, #000260, #ff0000);
+} */
+
+.weekday {
+    background-color: #f935c5;
+}
+.weekend {
+    background-color: #00ffc3;
+}
+
+.other-month  {
+    background-color: #fe980086;
+    color: aquamarine;
+}
+
+td:hover {
+    border-radius: 10px;
+}
+
+.today {
+    border-radius: 40%;
+    background-color: #84ff00;
+}
+
+#btnGoToToday {
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 100%;
+    background-color: #09476e;
+    border: 1px solid #f935c5;    
+    color: #f935c5;
+}
+#btnGoToToday:hover {
+    background-color: #f935c5;
+    border-color: #09476e;    
+    color: #09476e;
+}
